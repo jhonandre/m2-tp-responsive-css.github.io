@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template du TP4</title>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: "Arial", sans-serif;
+        background-color: rgb(220, 244, 238);
+      }
+
+      #introduction {
+        text-indent: 20px;
+      }
+
+      header {
+        background-color: rgb(236, 72, 72);
+        color: #fff;
+        text-align: center;
+        padding: 1em;
+      }
+
+      h1 {
+        margin: 0;
+      }
+
+      #menu-navigation {
+        background-color: rgb(238, 205, 71);
+        list-style-type: none;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      #menu-navigation li {
+        display: inline-block;
+        font-size: 20px;
+        padding: 20px;
+      }
+
+      h2 {
+        color: rgb(90, 64, 163);
+      }
+
+      main {
+        display: inline-block;
+        width: 800px;
+        height: auto;
+        border: 1px solid rgb(58, 11, 209);
+        padding: 0px;
+        margin: 20px;
+        box-sizing: border-box;
+      }
+
+      section {
+        margin-top: 20px;
+      }
+
+      article {
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin-bottom: 15px;
+      }
+
+      aside {
+        display: inline-block;
+        width: 20%;
+        vertical-align: top;
+        box-sizing: border-box;
+        padding: 20px;
+        border: 1px solid #ddd;
+      }
+
+      footer {
+        margin-top: auto;
+        text-align: center;
+        padding: 10px;
+        background-color: #df2d2d;
+      }
+
+      p.solid {
+        border-style: solid;
+      }
+
+      img {
+        float: left;
+      }
+
+      .conteneur1 {
+        width: 800px;
+      }
+
+      p {
+        border: 1px solid rgb(11, 10, 10);
+      }
+
+      .para1 {
+        width: 500px;
+        display: inline-block;
+      }
+
+      .para2 {
+        width: 300px;
+        display: inline-block;
+      }
+
+      video {
+        width: 100%;
+        height: auto;
+      }
+
+      a:hover {
+        color: indianred;
+      }
+      aside {
+        background-color: white;
+        padding: 10px;
+        margin: 20px;
+        width: 35%;
+        float: right;
+        border-style: solid;
+        border-width: 1px;
+        border-color: black;
+      }
+
+      aside > section {
+        background-color: rgb(230, 243, 164);
+        border: inherit;
+        padding: 10px;
+        margin: 10px;
+      }
+      img {
+        display: block;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>La Balise Header: Pour afficher: Image, Logo, Nom du site Web</h1>
+    </header>
+
+    <nav id="menu-navigation">
+      <h2>Menu de Navigation</h2>
+      <ul class="nav">
+        <li><a href="#">TP1</a></li>
+        <li><a href="#">TP2</a></li>
+        <li><a href="#">TP3</a></li>
+        <li><a href="#">TP4</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <article>
+        <section>
+          <h2>Tutoriel sur l'utilisation des Balises HTML et CSS</h2>
+
+          <section>
+            <article>
+              <h3>L'utilisation de la balise "header" :</h3>
+              <p id="p2" class="solid">1. Balise "header" :</p>
+              <p style="color: rgb(32, 49, 203)">
+                La balise "header" est utilisée pour définir l'en-tête d'une
+                page ou d'une section. Elle contient généralement des éléments
+                tels que le titre principal (h1) ou le logo du site. Dans cet
+                exemple, "header" encapsule le titre principal du site.
+              </p>
+            </article>
+
+            <article>
+              <h3>L'utilisation de la balise "NAV"</h3>
+              <p id="p1" class="solid">2. La balise Nav</p>
+              <p style="color: red" class="solid">
+                La balise "nav" est utilisée pour créer une section de
+                navigation. Elle contient généralement une liste de liens vers
+                différentes pages ou sections du site. Dans cet exemple, "nav"
+                encapsule un titre (h2) et une liste de liens (ul et li).
+              </p>
+            </article>
+
+            <article>
+              <h3>L'utilisation de la Propriété css display:</h3>
+              <p id="p3" class="solid">
+                3. Propriété CSS display: inline-block :
+              </p>
+              <p
+                style="color: rgb(30, 194, 47)"
+                class="solid"
+                id="introduction"
+              >
+                La propriété CSS display: inline-block est utilisée pour rendre
+                un élément en ligne tout en conservant les propriétés de bloc.
+                Dans cet exemple, elle est appliquée à la classe .para1 et
+                .para2, créant ainsi deux blocs en ligne à côté l'un de l'autre.
+              </p>
+            </article>
+            <article>
+              <h3>L'utilisation des balises "Section" et "Main":</h3>
+              <p id="p4" class="solid">4. Balise "section" et "main":</p>
+              <p style="color: rgb(174, 42, 115)" class="solid">
+                Les balises "section" et "main" sont utilisées pour structurer
+                le contenu de la page. "main" encapsule la section principale de
+                la page, qui peut contenir plusieurs sections plus petites. Dans
+                cet exemple, une section principale contient une sous-section
+                avec des articles.
+              </p>
+            </article>
+          </section>
+        </section>
+      </article>
+    </main>
+
+    <aside id="aside">
+      <h3>La section "Aside" sert:</h3>
+      <section>
+        <span>SECTION 1</span>
+        <p>
+          <img src="dino.jpeg" alt="Image" width="100" height="100" />
+          La balise "aside" est utilisée pour définir du contenu à côté du
+          contenu principal de la page, souvent dans une colonne latérale. Ce
+          contenu est généralement lié au contenu principal d'une manière ou
+          d'une autre, mais n'est pas nécessairement essentiel à la
+          compréhension immédiate du contenu principal.
+        </p>
+      </section>
+      <section>
+        <span>SECTION 2</span>
+
+        <p>
+          Dans un site web, un "aside" peut contenir des éléments tels que des
+          publicités, des liens vers des articles connexes, des informations sur
+          l'auteur ou des widgets de médias sociaux. Cela permet de séparer
+          visuellement le contenu principal du contenu supplémentaire ou
+          accessoire./p>
+        </p>
+      </section>
+
+      <section>
+        <span>SECTION 3</span>
+        <iframe
+          width="420"
+          height="315"
+          src="https://youtu.be/embed/salY_Sm6mv4?si=HHJ5JCRdf2CMZ81Y"
+        >
+        </iframe>
+      </section>
+    </aside>
+
+    <footer>
+      <p>Copyright © Andre Jhon Dienardo. Tous droits réservés.</p>
+    </footer>
+  </body>
+</html>
